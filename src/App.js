@@ -5,7 +5,12 @@ import Image from "./components/Image.js";
 import Info from "./components/Info.js";
 import Date from "./components/Date.js";
 
+import styled from "styled-components"
 import "./App.css";
+
+const StyledHeader = styled.h1`
+  font-size: 4rem;
+`;
 
 function App() {
   
@@ -26,12 +31,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🚀Astronomy Picture of the Day🚀</h1>
-      <Date date={ apodDate } />
-      <Title title={ apodTitle } />
-      <Image imageUrl={ apodImage } />
-      <Info info={apodInfo} />
-
+        <StyledHeader>🚀Astronomy Picture of the Day 🚀</StyledHeader>
+        <Date date={ apodDate } />
+        <Title title={ apodTitle } />
+        <Image imageUrl={ apodImage } />
+        <Info info={apodInfo} />
     </div>
   );
 }

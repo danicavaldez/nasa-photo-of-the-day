@@ -1,7 +1,16 @@
 import React from "react";
+import styled from "styled-components"
+
+const StyledTitle = styled.h2`
+  color: pink
+  font-size: 2rem
+  text-decoration: underline
+`;
 
 export default function Title({ title }) {
   return (
-    <h2 className="title">{ title }</h2>
+    <StyledTitle>{ title }</StyledTitle>
   )
 }
+
+
